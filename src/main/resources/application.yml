@@ -1,0 +1,18 @@
+server:
+  port: 8090
+logging:
+  config: classpath:log4j2.xml
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+  server:
+    datasource:
+      url: jdbc:mysql://172.20.0.6:3306/fort?serverTimezone=Hongkong&useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
+      username: fort
+      password: 2wsx3edc
+      driverClassName: com.mysql.cj.jdbc.Driver
+      initialSize: 10
+      maxIdle: 20
+      minIdle: 10
+      maxTotal: 100
